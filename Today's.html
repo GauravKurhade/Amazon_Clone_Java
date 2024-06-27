@@ -1,0 +1,302 @@
+<html>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Amazon Clone</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    
+    <body>
+    
+        <nav>
+            <a href="index.html"><img src="./assets/amazon_logo.png" width="100" alt=""></a>
+            <div class="nav-country">
+                <img src="./assets/location_icon.png" height="20" alt="">
+                <div>
+                    <p>Deliver to</p>
+                    <h1>Wagholi, Pune</h1>
+                </div>
+            </div>
+            <div class="nav-search">
+                <div class="nav-search-category">
+                    <p>All</p>
+                    <img src="./assets/dropdown_icon.png" height="12" alt="">
+                </div>
+                <input type="text" class="nav-search-input" placeholder="Search Amazon">
+                <img src="./assets/search_icon.png" class="nav-search-icon" alt="">
+            </div>
+            <div class="nav-language">
+                <img src="./assets/Flag_of_India.png" width="24px" alt="">
+                <p>IND</p>
+                <img src="./assets/dropdown_icon.png" width="8px" alt="">
+            </div>
+            <div class="nav-texts">
+                <p><a href="login.html">Hello, sign in</a></p>
+                <h1>Account & Lists <img src="./assets/dropdown_icon.png" width="8px" alt=""> </h1>
+            </div>
+            <div class="nav-texts">
+                <p>Returns</p>
+                <h1>& Orders</h1>
+            </div>
+            <a href="login.html" class="mobile-user-icon" style="display: none;">
+                <img src="./assets/user.png" alt="">
+            </a>
+            <a href="cart.html" class="nav-cart">
+                <img src="./assets/cart_icon.png" width="35px" alt="">
+                <h4>Cart</h4>
+            </a>
+        </nav>
+        <div class="nav-bottom">
+        <div>
+            <img src="./assets/menu_icon.png" width="25px" alt="">
+            <p>All</p>
+        </div>
+        <a href="Today's.html" class="nav-cart">
+            <p>Today's Deals</p>
+        </a>
+        <a href="Customer_Services.html" class="nav-cart">
+            <p>Customer Services</p>
+        </a>
+        <a href="Sell.html" class="nav-cart">
+            <p>Become Seller</p>
+        </a>
+        <p>Gift Cards</p>
+        <p>Prime</p>
+    </div>
+        
+
+    <style>
+        .container{
+            background-color: white;
+
+        
+        }
+        .deal-item {
+            
+            padding: 2px;
+            margin-bottom: 7px;
+            text-align: center;
+        }
+        .deal-item img {
+            max-width: 100px;
+            height: 150px;
+        }
+        .deal-item h4 {
+            margin-top: 5px;
+            font-size: 15px;
+        }
+        .deal-item .discount {
+            color: red;
+            font-weight: bold;
+        }
+        .deal-item .price {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .deal-item .description {
+            margin-top: 5px;
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color:white;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            padding: 5px;
+        }
+        
+        .carousel-control-prev-icon {
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 0L0 16l16 16 16-16z'/%3E%3C/svg%3E");
+        }
+        .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 32L32 16l-16-16-16 16z'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center">Today's Deals</h2>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-12">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-2 deal-item">
+                                    <img src="assets/deal.png" alt="Deal of the Day" style="height: 70px; width: 70px;">
+                                    <h4>Deal of the Day</h4>
+                                </div>
+                                <div class="col-md-2 deal-item">
+                                    <img src="./assets/light.png" alt="Lightning Deals" style="height: 70px; width: 70px;">
+                                    <h4>Lightning Deals</h4>
+                                </div>
+                                <div class="col-md-2 deal-item">
+                                    <img src="./assets/mobile.png" alt="Mobiles" style="height: 70px; width: 70px;">
+                                    <h4>Mobiles</h4>
+                                </div>
+                                <div class="col-md-2 deal-item">
+                                    <img src="./assets/elc.png" alt="Electronics" style="height: 70px; width: 70px;">
+                                    <h4>Electronics</h4>
+                                </div>
+                                <div class="col-md-2 deal-item">
+                                    <img src="./assets/ok.png" alt="Mobiles & computer accessories" style="height: 70px; width: 70px;">
+                                    <h4>Mobiles & computer accessories</h4>
+                                </div>
+                                <div class="col-md-2 deal-item">
+                                    <img src="./assets/fridge.png" alt="Large Appliances" style="height: 70px; width: 70px;">
+                                    <h4>Large Appliances</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-2 deal-item">
+                                    <img src="./assets/mixtu.png" alt="Home & Kitchen" style="height: 70px; width: 70px;">
+                                    <h4>Home & Kitchen</h4>
+                                </div>
+                                <div class="col-md-2 deal-item">
+                                    <img src="./assets/sofa.png" alt="Furniture" style="height: 70px; width: 70px;">
+                                    <h4>Furniture</h4>
+                                </div>
+                                <div class="col-md-2 deal-item">
+                                    <img src="./assets/trimmer.png" alt="Grooming & Wellness" style="height: 70px; width: 70px;">
+                                    <h4>Grooming & Wellness</h4>
+                                </div>
+                                <div class="col-md-2 deal-item">
+                                    <img src="./assets/bottel.png" alt="Health & Household" style="height: 70px; width: 70px;">
+                                    <h4>Health & Household</h4>
+                                </div>
+                                <div class="col-md-2 deal-item">
+                                    <img src="./assets/cloth.png" alt="Clothing" style="height: 70px; width: 70px;">
+                                    <h4>Clothing</h4>
+                                </div>
+                                <div class="col-md-2 deal-item">
+                                    <img src="./assets/footwear.png" alt="Footwear" style="height: 70px; width: 70px;">
+                                    <h4>Footwear</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-12">
+                <h2 class="text-center">Best Sellers</h2>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-3">
+                <div class="deal-item">
+                    <img src="assets/iqooo9.png" alt="¡QOO Z9 5G">
+                    <h4>¡QOO Z9 5G (Brushed Green, 8GB RAM, 128GB Storage)</h4>
+                    <p>20% off Limited time deal</p>
+                    <div class="price">₹25,990</div>
+                    <div class="discount">₹32,990</div>
+                    <div class="color-options">
+                        <div class="color-option" style="background-color: #4CAF50;"></div>
+                        <div class="color-option" style="background-color: #008000;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="deal-item">
+                    <img src="assets/iphone13.png" alt="Apple iPhone 13">
+                    <h4>Apple iPhone 13 (128GB) - Blue</h4>
+                    <p>19% off Limited time deal</p>
+                    <div class="price">₹59,900</div>
+                    <div class="discount">₹73,900</div>
+                    <div class="color-options">
+                        <div class="color-option" style="background-color: #0000FF;"></div>
+                        <div class="color-option" style="background-color: #000000;"></div>
+                        <div class="color-option" style="background-color: #D3D3D3;"></div>
+                        <div class="color-option" style="background-color: #FFC0CB;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="deal-item">
+                    <img src="assets/oneplusnord3.png" alt="OnePlus Nord 3 5G">
+                    <h4>OnePlus Nord 3 5G (Tempest Gray, 8GB RAM, 128GB Storage)</h4>
+                    <p>41% off Limited time deal</p>
+                    <div class="price">₹26,999</div>
+                    <div class="discount">₹45,999</div>
+                    <div class="color-options">
+                        <div class="color-option" style="background-color: #808080;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="deal-item">
+                    <img src="assets/reakme nargo.png" alt="realme NARZO N65 5G">
+                    <h4>realme NARZO N65 5G (Amber Gold 6GB RAM, 128GB Storage)</h4>
+                    <p>17% off Limited time deal</p>
+                    <div class="price">₹11,999</div>
+                    <div class="discount">₹14,499</div>
+                    <div class="color-options">
+                        <div class="color-option" style="background-color: #DAA520;"></div>
+                    </div>
+                    <p>Save ₹1,500.00 with coupon</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-12">
+                <h2 class="text-center">New Releases</h2>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-3">
+                <div class="deal-item">
+                    <img src="assets/iqooneo.png" alt="¡QOO Neo9 Pro 5G">
+                    <h4>¡QOO Neo9 Pro 5G (Fiery Red, 12GB RAM, 256GB Storage)</h4>
+                    <p>13% off Limitedtime deal</p>
+                    <div class="price">₹34,999</div>
+                    <div class="discount">₹40,499</div>
+                    <div class="color-options">
+                        <div class="color-option" style="background-color: #FF0000;"></div>
+                        <div class="color-option" style="background-color: #000000;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="deal-item">
+                    <img src="assets/realmenarzo.png" alt="Redmi Note 13 5G">
+                    <h4>Redmi Note 13 5G (Arctic White, 6GB RAM, 128GB Storage)</h4>
+                    <p>19% off Limited time deal</p>
+                    <div class="price">₹15,999</div>
+                    <div class="discount">₹19,999</div>
+                    <div class="color-options">
+                        <div class="color-option" style="background-color: #FFFFFF;"></div>
+                        <div class="color-option" style="background-color: #000000;"></div>
+                        <div class="color-option" style="background-color: #DAA520;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+    
+</html>
